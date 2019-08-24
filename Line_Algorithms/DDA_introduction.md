@@ -19,7 +19,10 @@ It is very basic line drawing algorithm in computer graphics
 
 7. End!!
 
-## Algorithm_DDA{
+## Algorithm_DDA
+
+```
+	Algo_DDA(){
 
 	//input 
 	float x1,y1,y2,x2;	
@@ -56,3 +59,6 @@ It is very basic line drawing algorithm in computer graphics
 	plot (round(x),round(y));
 
 	}
+
+
+```
