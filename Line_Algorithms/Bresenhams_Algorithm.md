@@ -14,3 +14,4 @@ Advantages of Bresenhams algorithm :
 2. Based on the increment factor method.
 3. Faster than DDA.
 4. Only substraction and addition operations.
+
