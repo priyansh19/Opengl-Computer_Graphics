@@ -1,13 +1,11 @@
-#include<iostream>
+#include<stdio.h>
 #include<GL/glut.h>
 #include<math.h>
-#include<cstdlib>
+#include<stdlib.h>
 
-using namespace std;
+	int x1,yr,x2,y2;
 
-int x1,yr,x2,y2;
-
-void DDA(void){
+	void DDA(void){
 	float step,k,x,y,Xinc,Yinc;
 	int dx,dy;
 	
@@ -62,25 +60,30 @@ void DDA(void){
 	}
 
 	int main(int argc, char** argv) {
-	cout<<("Enter the value of x1 : ");
-	cin>>x1;
-	cout<<("Enter the value of y1 : ");
-	cin>>yr;
-	cout<<("Enter the value of x2 : ");
-	cin>>x2;
-	cout<<("Enter the value of y2 : ");
-	cin>>y2;
-
+	printf("Enter the value of x1 : ");
+	scanf("%d",&x1);
+	printf("Enter the value of y1 : ");
+	scanf("%d",&yr);
+	printf("Enter the value of x2 : ");
+	scanf("%d",&x2);
+	printf("Enter the value of y2 : ");
+	scanf("%d",&y2);
+	int side = 3;
 	glutInit(&argc, argv);
 	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize (500, 500);
 	glutInitWindowPosition (100,100);
 	glutCreateWindow ("DDA Line Algo");
 	init();
+	while(side)
+	{
+	
 	glutDisplayFunc(DDA);
+	side--;
+	}
 	glutMainLoop();
 
 	return 0;
 	}
 
-
+	
