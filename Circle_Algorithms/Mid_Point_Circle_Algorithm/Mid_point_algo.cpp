@@ -5,7 +5,7 @@
 
 	int x1,yr,r;
 
-	void Polar_Circle()
+	void Mid_Point_Circle()
 	{
 	int x = 0;
 	int y = r;
@@ -76,9 +76,9 @@
 	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
 	glutInitWindowSize (500, 500);
 	glutInitWindowPosition (100,100);
-	glutCreateWindow ("Circle Using Polar Co-ordinates");
+	glutCreateWindow ("Circle Using Mid Point Theorem");
 	init();
-	glutDisplayFunc(Polar_Circle);
+	glutDisplayFunc(Mid_Point_Circle);
 	glutMainLoop();
 
 	return 0;
