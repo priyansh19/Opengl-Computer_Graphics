@@ -52,7 +52,7 @@ void floodFill(GLint x, GLint y, Color oldColor, Color newColor) {
 
 void onMouseClick(int button, int state, int x, int y)
 {
-	Color newColor = {1.0f, 0.0f, 0.0f};
+	Color newColor = {1.0f, 1.0f, 0.0f};
 	Color oldColor = {1.0f, 1.0f, 1.0f};
 
 	floodFill(320, 240, oldColor, newColor);
