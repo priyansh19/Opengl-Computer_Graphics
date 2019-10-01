@@ -6,9 +6,9 @@
 void display();
 using namespace std;
 float xmin=-100;
-float ymin=-100;
-float xmax=100;
-float ymax=100;
+float ymin=-85;
+float xmax=95;
+float ymax=45;
 float xd1,yd1,xd2,yd2;
 
 
